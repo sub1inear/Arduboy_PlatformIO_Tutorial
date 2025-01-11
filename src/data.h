@@ -3,10 +3,16 @@
 
 #define CENTER_STR(str) WIDTH / 2 - ((sizeof(str) - 1) * (5 + 1) - 1) / 2
 
-constexpr uint8_t tile_size = 8;
+// To convert, use
+// https://www.bloggingadeadhorse.com/TeamARGImgConverter/
+// https://www.bloggingadeadhorse.com/TeamARGTileSheetConverter/
+// https://www.bloggingadeadhorse.com/TeamARGSpriteConverter/
 
 const uint8_t PROGMEM tiles[] = {
-    8, 8,
+    // tile width
+    8,
+    // tile height
+    8,
     // grass
     0x7c, 0xcf, 0xff, 0xe3, 0x3f, 0xf9, 0xcf, 0xff, 
     // wall
